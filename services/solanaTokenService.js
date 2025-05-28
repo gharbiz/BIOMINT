@@ -1,10 +1,10 @@
 // services/solanaTokenService.js
 require("dotenv").config();
-const { Connection, Keypair, PublicKey, clusterApiUrl, Transaction } = require("@solana/web3.js");
+const { Connection, Keypair, PublicKey, Transaction } = require("@solana/web3.js");
 const { getOrCreateAssociatedTokenAccount, createTransferInstruction } = require("@solana/spl-token");
 
 // 1) Connexion à la blockchain Solana
-const connection = new Connection(process.env.SOLANA_RPC_URL || clusterApiUrl("devnet"), "confirmed");
+const connection = new Connection(process.env.SOLANA_RPC_URL, "confirmed");
 
 // 2) Clé secrète de ta trésorerie (Keypair) - AVEC VÉRIFICATION
 let treasuryKeypair;
@@ -14,7 +14,7 @@ try {
   }
   
   const treasurySecret = JSON.parse(process.env.TREASURY_SECRET_KEY);
-  treasuryKeypair = Keypair.fromSecretKey(Buffer.from(treasurySecret));
+  treasuryKeypair = Keypair.fromSecretKey(Uint8Array.from(treasurySecret));
   console.log("✅ Clé de trésorerie chargée avec succès");
 } catch (error) {
   console.error("❌ Erreur lors du chargement de la clé de trésorerie:", error.message);
