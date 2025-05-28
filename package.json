@@ -9,9 +9,16 @@
 "scripts": {
 "start": "node index.js",
 "dev": "nodemon index.js",
- "test": "echo \"Error: no test specified\" && exit 1"
+"test": "echo "Error: no test specified" && exit 1"
 },
-"keywords": \["express","solana","polygon","nft","erc1155","erc721"],
+"keywords": \[
+"express",
+"solana",
+"polygon",
+"nft",
+"erc1155",
+"erc721"
+],
 "dependencies": {
 "@metaplex-foundation/js": "^0.20.1",
 "@solana/spl-token": "^0.4.13",
@@ -27,6 +34,7 @@
 "ethers": "^5.8.0"
 },
 "devDependencies": {
-"@nomiclabs/hardhat-ethers": "^2.2.3"
+"@nomiclabs/hardhat-ethers": "^2.2.3",
+"nodemon": "^2.0.0"
 }
 }
