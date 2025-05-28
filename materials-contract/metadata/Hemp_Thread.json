@@ -1,0 +1,10 @@
+{
+  "name": "Hemp Thread",
+  "description": "Fil de chanvre, résistant et biodégradable.",
+  "image": "https://rapidevente.com/wp-content/uploads/2025/05/Fil-de-Chanvre.jpeg",
+  "attributes": [
+    { "trait_type": "Type", "value": "Filature" },
+    { "trait_type": "Origine", "value": "Chanvre européen" },
+    { "trait_type": "Éco-responsable", "value": true }
+  ]
+}

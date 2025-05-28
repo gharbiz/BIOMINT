@@ -1,0 +1,10 @@
+{
+  "name": "Nature Dye",
+  "description": "Teinture végétale sans produits chimiques.",
+  "image": "https://rapidevente.com/wp-content/uploads/2025/05/Teinture-Naturelle.jpeg",
+  "attributes": [
+    { "trait_type": "Type", "value": "Colorant" },
+    { "trait_type": "Origine", "value": "Plantes locales" },
+    { "trait_type": "Toxicité", "value": "Aucune" }
+  ]
+}
