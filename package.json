@@ -1,41 +1,40 @@
 {
-"name": "gharb",
-"version": "1.0.0",
-"description": "Backend Express pour BioMint",
-"license": "ISC",
-"author": "Legharbi",
-"type": "commonjs",
-"main": "index.js",
+  "name": "gharb",
+  "version": "1.0.0",
+  "description": "Backend Express pour BioMint",
+  "license": "ISC",
+  "author": "Legharbi",
+  "type": "commonjs",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
-"keywords": \[
-"express",
-"solana",
-"polygon",
-"nft",
-"erc1155",
-"erc721"
-],
-"dependencies": {
-"@metaplex-foundation/js": "^0.20.1",
-"@solana/spl-token": "^0.4.13",
-"@solana/web3.js": "^1.98.2",
-"bip39": "^3.1.0",
-"bs58": "^6.0.0",
-"cors": "^2.8.5",
-"ed25519-hd-key": "^1.3.0",
-"express": "^5.1.0",
-"helmet": "^8.1.0",
-"tweetnacl": "^1.0.3",
-"dotenv": "^16.5.0",
-"ethers": "^5.8.0"
-},
-"devDependencies": {
-"@nomiclabs/hardhat-ethers": "^2.2.3",
-"nodemon": "^2.0.0"
-}
+  "keywords": [
+    "express",
+    "solana",
+    "polygon",
+    "nft",
+    "erc1155",
+    "erc721"
+  ],
+  "dependencies": {
+    "@metaplex-foundation/js": "^0.20.1",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
+    "bip39": "^3.1.0",
+    "bs58": "^6.0.0",
+    "cors": "^2.8.5",
+    "ed25519-hd-key": "^1.3.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "tweetnacl": "^1.0.3",
+    "dotenv": "^16.5.0",
+    "ethers": "^5.8.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "nodemon": "^2.0.0"
+  }
 }
